@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	connectionString = "mongodb+srv://gagnonc:Xcv7Bnm!@endor-v1kqu.mongodb.net/test?retryWrites=true&w=majority"
+	connectionString = ""
 	dbName           = "deployments"
 	collName         = "deploy"
 )
