@@ -1,0 +1,34 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Values</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<h1>Set config service values</h1>
+<center>
+<div>
+    <form method="POST" action="http://localhost:3030/api/set">
+        <label>ServiceName :</label><input name="servicename" type="text" value="" /><br>
+        <label>ReplicaCount :</label><input name="replicacount" type="text" value="" /><br>
+        <label>ImageName :</label><input name="imagename" type="text" value="" /><br>
+        <label>Repository :</label><input name="repo" type="text" value="" /><br>
+        <label>Tag :</label><input name="tag" type="text" value="" /><br>
+        <label>PullPolicy :</label><input name="pull" type="text" value="" /><br>
+        <label>LbType :</label><input name="lb" type="text" value="" /><br>
+        <label>ExternalPort :</label><input name="externalport" type="text" value="" /><br>
+        <label>InternalPort :</label><input name="internalport" type="text" value="" /><br>
+        <br>
+        <input type="submit" value="Apply" />
+    </form>
+</div>
+<div>
+    <form method="GET" action="http://localhost:3030/api/deployments">
+        <input type="submit" value="Get All Deployments" />
+    </form>
+</div>
+</center>
+</body>
+</html>
+
+

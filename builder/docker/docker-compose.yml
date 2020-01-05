@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+  api_micro:
+    image: api_micro
+    ports:
+      - "3030:3030"
+    networks:
+      - service-net
+  web_micro:
+    image: web_micro
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api_micro
+    networks:
+      - service-net
+
+
+networks:
+  service-net:
+    driver: bridge

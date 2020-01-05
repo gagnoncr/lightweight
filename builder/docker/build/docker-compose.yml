@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  api_micro:
+    image: api_micro
+    build:
+      context: ../../../api_micro
+      dockerfile: Dockerfile
+  web_micro:
+    image: web_micro
+    build:
+      context: ../../../web_micro
+      dockerfile: Dockerfile
