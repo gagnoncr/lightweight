@@ -1,17 +1,15 @@
 package middleware
 
 import (
-	"bytes"
 	"context"
-	"log"
-	"os/exec"
-
+	"fmt"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"io/ioutil"
+	"log"
 )
 
 const (
-	connectionString = ""
 	dbName           = "deployments"
 	collName         = "deploy"
 )
@@ -22,16 +20,13 @@ var (
 
 func init() {
 
-	cmd := exec.Command("/bin/sh", "-c", "cd middelware && ./mongo.sh")
-	var outb, errb bytes.Buffer
-	cmd.Stdout = &outb
-	cmd.Stderr = &errb
-	err := cmd.Run()
+	b, err := ioutil.ReadFile("middelware/mongoSensitive.encrypted")
+
 	if err != nil {
-		log.Println(err.Error())
+		fmt.Print(err)
 	}
-	log.Println(outb.String())
-	log.Println(errb.String())
+
+	connectionString := string(b)
 
 	clientOptions := options.Client().ApplyURI(connectionString)
 

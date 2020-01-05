@@ -1,4 +1,4 @@
-**/middelware/mongoSensitive
+*.encrypted
 **/api_micro/api_micro
 **/web_micro/web_micro
 *.log
