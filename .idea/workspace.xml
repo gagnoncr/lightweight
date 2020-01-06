@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a48dde33-df0e-4ba8-adc7-0df67f12005b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_micro/middelware/deployments.go" beforeDir="false" afterPath="$PROJECT_DIR$/api_micro/middelware/deployments.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_micro/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/web_micro/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder/orche.sh" beforeDir="false" afterPath="$PROJECT_DIR$/builder/orche.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue_micro/src/components/Deployments.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+            <state relative-caret-position="-1140">
+              <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
               <folding>
                 <element signature="e#2865#2871#0" expanded="true" />
                 <element signature="e#2922#2948#0" expanded="true" />
@@ -290,16 +288,15 @@
       <workItem from="1578319491775" duration="332000" />
       <workItem from="1578334846009" duration="1269000" />
       <workItem from="1578336217138" duration="4926000" />
-      <workItem from="1578342405086" duration="5729000" />
+      <workItem from="1578342405086" duration="6004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89347000" />
+    <option name="totallyTimeSpent" value="89622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-240" y="-1058" width="1906" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49829352" visible="true" weight="0.107411385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -321,7 +318,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3290993" />
-      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.32948583" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -668,8 +665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue_micro/src/components/Deployments.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        <state relative-caret-position="-1140">
+          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
           <folding>
             <element signature="e#2865#2871#0" expanded="true" />
             <element signature="e#2922#2948#0" expanded="true" />
