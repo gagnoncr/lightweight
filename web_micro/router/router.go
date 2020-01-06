@@ -21,5 +21,3 @@ func healthCheck(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "healthy")
 	w.WriteHeader(http.StatusAccepted)
 }
-
-/* f */

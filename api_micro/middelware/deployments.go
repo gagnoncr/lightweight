@@ -39,7 +39,7 @@ func CreateDeployment(w http.ResponseWriter, r *http.Request) {
 		ReplicaCount: r.FormValue("replicacount"),
 		ImageName:    r.FormValue("imagename"),
 		Repo:         r.FormValue("repo"),
-		Tag:          r.FormValue("tag"),
+		Tag:          r.FormValue("imagetag"),
 		PullPolicy:   r.FormValue("pull"),
 		LbType:       r.FormValue("lb"),
 		ExternalPort: r.FormValue("externalport"),
@@ -61,6 +61,7 @@ func GetAllDeployments(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	payload := getAllDeployments()
+
 	json.NewEncoder(w).Encode(payload)
 }
 
